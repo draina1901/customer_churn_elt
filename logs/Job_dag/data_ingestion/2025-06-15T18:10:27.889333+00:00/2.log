@@ -1,0 +1,40 @@
+[2025-06-15 18:11:31,609] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: Job_dag.data_ingestion 2025-06-15T18:10:27.889333+00:00 [queued]>
+[2025-06-15 18:11:31,620] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: Job_dag.data_ingestion 2025-06-15T18:10:27.889333+00:00 [queued]>
+[2025-06-15 18:11:31,620] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2025-06-15 18:11:31,620] {taskinstance.py:1088} INFO - Starting attempt 2 of 2
+[2025-06-15 18:11:31,620] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2025-06-15 18:11:31,674] {taskinstance.py:1107} INFO - Executing <Task(PythonOperator): data_ingestion> on 2025-06-15T18:10:27.889333+00:00
+[2025-06-15 18:11:31,677] {standard_task_runner.py:52} INFO - Started process 218 to run task
+[2025-06-15 18:11:31,679] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'Job_dag', 'data_ingestion', '2025-06-15T18:10:27.889333+00:00', '--job-id', '79', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/churn_dag.py', '--cfg-path', '/tmp/tmpvl24ogch', '--error-file', '/tmp/tmpigjchy81']
+[2025-06-15 18:11:31,679] {standard_task_runner.py:77} INFO - Job 79: Subtask data_ingestion
+[2025-06-15 18:11:31,810] {logging_mixin.py:104} INFO - Running <TaskInstance: Job_dag.data_ingestion 2025-06-15T18:10:27.889333+00:00 [running]> on host c455ceb3e41f
+[2025-06-15 18:11:32,014] {taskinstance.py:1302} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Job_dag
+AIRFLOW_CTX_TASK_ID=data_ingestion
+AIRFLOW_CTX_EXECUTION_DATE=2025-06-15T18:10:27.889333+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-06-15T18:10:27.889333+00:00
+[2025-06-15 18:11:32,027] {logging_mixin.py:104} INFO - Conection Testing123
+[2025-06-15 18:11:32,027] {logging_mixin.py:104} INFO - <connection object at 0x7fffb536e048; dsn: 'user=myuser password=xxx dbname=cust_churn_stg host=host.docker.internal port=6543', closed: 0>
+[2025-06-15 18:11:32,030] {taskinstance.py:1501} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1157, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1331, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1361, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 150, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 161, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/Staging_upload.py", line 35, in ingestionFunc
+    """, row)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "customers_pkey"
+DETAIL:  Key (customerid)=(1) already exists.
+
+[2025-06-15 18:11:32,032] {taskinstance.py:1551} INFO - Marking task as FAILED. dag_id=Job_dag, task_id=data_ingestion, execution_date=20250615T181027, start_date=20250615T181131, end_date=20250615T181132
+[2025-06-15 18:11:32,105] {local_task_job.py:151} INFO - Task exited with return code 1

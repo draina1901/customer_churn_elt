@@ -1,0 +1,252 @@
+[2025-06-15 16:31:46,750] {scheduler_job.py:182} INFO - Started process (PID=38701) to work on /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:31:46,751] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/jobscraperdag.py for tasks to queue
+[2025-06-15 16:31:46,753] {logging_mixin.py:104} INFO - [2025-06-15 16:31:46,753] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:31:46,765] {logging_mixin.py:104} INFO - [2025-06-15 16:31:46,764] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/jobscraperdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/jobscraperdag.py", line 6, in <module>
+    from scraper import extract
+ModuleNotFoundError: No module named 'scraper'
+[2025-06-15 16:31:46,766] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:31:46,836] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/jobscraperdag.py took 0.089 seconds
+[2025-06-15 16:32:17,118] {scheduler_job.py:182} INFO - Started process (PID=38763) to work on /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:32:17,119] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/jobscraperdag.py for tasks to queue
+[2025-06-15 16:32:17,120] {logging_mixin.py:104} INFO - [2025-06-15 16:32:17,120] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:32:17,133] {logging_mixin.py:104} INFO - [2025-06-15 16:32:17,131] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/jobscraperdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/jobscraperdag.py", line 6, in <module>
+    from scraper import extract
+ModuleNotFoundError: No module named 'scraper'
+[2025-06-15 16:32:17,133] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:32:17,199] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/jobscraperdag.py took 0.084 seconds
+[2025-06-15 16:32:47,309] {scheduler_job.py:182} INFO - Started process (PID=38815) to work on /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:32:47,310] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/jobscraperdag.py for tasks to queue
+[2025-06-15 16:32:47,311] {logging_mixin.py:104} INFO - [2025-06-15 16:32:47,311] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:32:47,321] {logging_mixin.py:104} INFO - [2025-06-15 16:32:47,320] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/jobscraperdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/jobscraperdag.py", line 6, in <module>
+    from scraper import extract
+ModuleNotFoundError: No module named 'scraper'
+[2025-06-15 16:32:47,321] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:32:47,396] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/jobscraperdag.py took 0.091 seconds
+[2025-06-15 16:33:17,613] {scheduler_job.py:182} INFO - Started process (PID=38877) to work on /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:33:17,614] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/jobscraperdag.py for tasks to queue
+[2025-06-15 16:33:17,615] {logging_mixin.py:104} INFO - [2025-06-15 16:33:17,615] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:33:17,633] {logging_mixin.py:104} INFO - [2025-06-15 16:33:17,631] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/jobscraperdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/jobscraperdag.py", line 6, in <module>
+    from scraper import extract
+ModuleNotFoundError: No module named 'scraper'
+[2025-06-15 16:33:17,633] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:33:17,702] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/jobscraperdag.py took 0.094 seconds
+[2025-06-15 16:33:47,748] {scheduler_job.py:182} INFO - Started process (PID=38939) to work on /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:33:47,752] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/jobscraperdag.py for tasks to queue
+[2025-06-15 16:33:47,753] {logging_mixin.py:104} INFO - [2025-06-15 16:33:47,752] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:33:47,770] {logging_mixin.py:104} INFO - [2025-06-15 16:33:47,768] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/jobscraperdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/jobscraperdag.py", line 6, in <module>
+    from scraper import extract
+ModuleNotFoundError: No module named 'scraper'
+[2025-06-15 16:33:47,771] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:33:47,839] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/jobscraperdag.py took 0.097 seconds
+[2025-06-15 16:34:17,998] {scheduler_job.py:182} INFO - Started process (PID=38991) to work on /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:34:18,000] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/jobscraperdag.py for tasks to queue
+[2025-06-15 16:34:18,001] {logging_mixin.py:104} INFO - [2025-06-15 16:34:18,001] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:34:18,013] {logging_mixin.py:104} INFO - [2025-06-15 16:34:18,011] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/jobscraperdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/jobscraperdag.py", line 6, in <module>
+    from scraper import extract
+ModuleNotFoundError: No module named 'scraper'
+[2025-06-15 16:34:18,013] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:34:18,083] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/jobscraperdag.py took 0.091 seconds
+[2025-06-15 16:34:30,216] {scheduler_job.py:182} INFO - Started process (PID=39033) to work on /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:34:30,216] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/jobscraperdag.py for tasks to queue
+[2025-06-15 16:34:30,217] {logging_mixin.py:104} INFO - [2025-06-15 16:34:30,217] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:34:30,225] {logging_mixin.py:104} INFO - [2025-06-15 16:34:30,224] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/jobscraperdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/jobscraperdag.py", line 6, in <module>
+    from scraper import extract
+ModuleNotFoundError: No module named 'scraper'
+[2025-06-15 16:34:30,226] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:34:30,289] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/jobscraperdag.py took 0.077 seconds
+[2025-06-15 16:35:00,896] {scheduler_job.py:182} INFO - Started process (PID=39095) to work on /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:35:00,897] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/jobscraperdag.py for tasks to queue
+[2025-06-15 16:35:00,899] {logging_mixin.py:104} INFO - [2025-06-15 16:35:00,899] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:35:00,910] {logging_mixin.py:104} INFO - [2025-06-15 16:35:00,909] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/jobscraperdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/jobscraperdag.py", line 6, in <module>
+    from scraper import extract
+ModuleNotFoundError: No module named 'scraper'
+[2025-06-15 16:35:00,910] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:35:00,974] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/jobscraperdag.py took 0.080 seconds
+[2025-06-15 16:35:31,503] {scheduler_job.py:182} INFO - Started process (PID=39157) to work on /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:35:31,506] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/jobscraperdag.py for tasks to queue
+[2025-06-15 16:35:31,507] {logging_mixin.py:104} INFO - [2025-06-15 16:35:31,507] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:35:31,518] {logging_mixin.py:104} INFO - [2025-06-15 16:35:31,516] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/jobscraperdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/jobscraperdag.py", line 6, in <module>
+    from scraper import extract
+ModuleNotFoundError: No module named 'scraper'
+[2025-06-15 16:35:31,518] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:35:31,590] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/jobscraperdag.py took 0.092 seconds
+[2025-06-15 16:36:01,710] {scheduler_job.py:182} INFO - Started process (PID=39209) to work on /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:36:01,711] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/jobscraperdag.py for tasks to queue
+[2025-06-15 16:36:01,711] {logging_mixin.py:104} INFO - [2025-06-15 16:36:01,711] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:36:01,718] {logging_mixin.py:104} INFO - [2025-06-15 16:36:01,717] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/jobscraperdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/jobscraperdag.py", line 6, in <module>
+    from scraper import extract
+ModuleNotFoundError: No module named 'scraper'
+[2025-06-15 16:36:01,718] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:36:01,783] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/jobscraperdag.py took 0.075 seconds
+[2025-06-15 16:36:32,210] {scheduler_job.py:182} INFO - Started process (PID=39270) to work on /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:36:32,212] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/jobscraperdag.py for tasks to queue
+[2025-06-15 16:36:32,213] {logging_mixin.py:104} INFO - [2025-06-15 16:36:32,213] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:36:32,220] {logging_mixin.py:104} INFO - [2025-06-15 16:36:32,219] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/jobscraperdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/jobscraperdag.py", line 6, in <module>
+    from scraper import extract
+ModuleNotFoundError: No module named 'scraper'
+[2025-06-15 16:36:32,221] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:36:32,287] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/jobscraperdag.py took 0.080 seconds
+[2025-06-15 16:37:02,415] {scheduler_job.py:182} INFO - Started process (PID=39332) to work on /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:37:02,417] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/jobscraperdag.py for tasks to queue
+[2025-06-15 16:37:02,418] {logging_mixin.py:104} INFO - [2025-06-15 16:37:02,417] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:37:02,429] {logging_mixin.py:104} INFO - [2025-06-15 16:37:02,428] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/jobscraperdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/jobscraperdag.py", line 6, in <module>
+    from scraper import extract
+ModuleNotFoundError: No module named 'scraper'
+[2025-06-15 16:37:02,430] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:37:02,501] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/jobscraperdag.py took 0.091 seconds
+[2025-06-15 16:37:32,694] {scheduler_job.py:182} INFO - Started process (PID=39384) to work on /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:37:32,695] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/jobscraperdag.py for tasks to queue
+[2025-06-15 16:37:32,696] {logging_mixin.py:104} INFO - [2025-06-15 16:37:32,696] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:37:32,705] {logging_mixin.py:104} INFO - [2025-06-15 16:37:32,703] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/jobscraperdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/jobscraperdag.py", line 6, in <module>
+    from scraper import extract
+ModuleNotFoundError: No module named 'scraper'
+[2025-06-15 16:37:32,705] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:37:32,771] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/jobscraperdag.py took 0.080 seconds
+[2025-06-15 16:38:02,892] {scheduler_job.py:182} INFO - Started process (PID=39446) to work on /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:38:02,894] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/jobscraperdag.py for tasks to queue
+[2025-06-15 16:38:02,895] {logging_mixin.py:104} INFO - [2025-06-15 16:38:02,894] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:38:02,904] {logging_mixin.py:104} INFO - [2025-06-15 16:38:02,903] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/jobscraperdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/jobscraperdag.py", line 6, in <module>
+    from scraper import extract
+ModuleNotFoundError: No module named 'scraper'
+[2025-06-15 16:38:02,905] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:38:02,976] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/jobscraperdag.py took 0.087 seconds
+[2025-06-15 16:38:33,271] {scheduler_job.py:182} INFO - Started process (PID=39508) to work on /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:38:33,273] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/jobscraperdag.py for tasks to queue
+[2025-06-15 16:38:33,274] {logging_mixin.py:104} INFO - [2025-06-15 16:38:33,274] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:38:33,285] {logging_mixin.py:104} INFO - [2025-06-15 16:38:33,283] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/jobscraperdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/jobscraperdag.py", line 6, in <module>
+    from scraper import extract
+ModuleNotFoundError: No module named 'scraper'
+[2025-06-15 16:38:33,286] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:38:33,356] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/jobscraperdag.py took 0.089 seconds
+[2025-06-15 16:39:03,596] {scheduler_job.py:182} INFO - Started process (PID=39560) to work on /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:39:03,598] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/jobscraperdag.py for tasks to queue
+[2025-06-15 16:39:03,599] {logging_mixin.py:104} INFO - [2025-06-15 16:39:03,599] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:39:03,610] {logging_mixin.py:104} INFO - [2025-06-15 16:39:03,609] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/jobscraperdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/jobscraperdag.py", line 6, in <module>
+    from scraper import extract
+ModuleNotFoundError: No module named 'scraper'
+[2025-06-15 16:39:03,611] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:39:03,679] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/jobscraperdag.py took 0.090 seconds
+[2025-06-15 16:39:33,996] {scheduler_job.py:182} INFO - Started process (PID=39622) to work on /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:39:33,998] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/jobscraperdag.py for tasks to queue
+[2025-06-15 16:39:33,999] {logging_mixin.py:104} INFO - [2025-06-15 16:39:33,999] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:39:34,010] {logging_mixin.py:104} INFO - [2025-06-15 16:39:34,008] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/jobscraperdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/jobscraperdag.py", line 6, in <module>
+    from scraper import extract
+ModuleNotFoundError: No module named 'scraper'
+[2025-06-15 16:39:34,011] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:39:34,082] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/jobscraperdag.py took 0.091 seconds
+[2025-06-15 16:40:04,327] {scheduler_job.py:182} INFO - Started process (PID=39684) to work on /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:40:04,329] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/jobscraperdag.py for tasks to queue
+[2025-06-15 16:40:04,330] {logging_mixin.py:104} INFO - [2025-06-15 16:40:04,330] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:40:04,339] {logging_mixin.py:104} INFO - [2025-06-15 16:40:04,338] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/jobscraperdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/jobscraperdag.py", line 6, in <module>
+    from scraper import extract
+ModuleNotFoundError: No module named 'scraper'
+[2025-06-15 16:40:04,339] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/jobscraperdag.py
+[2025-06-15 16:40:04,405] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/jobscraperdag.py took 0.080 seconds

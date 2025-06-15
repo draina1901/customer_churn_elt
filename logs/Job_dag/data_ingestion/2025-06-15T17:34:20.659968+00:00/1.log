@@ -1,0 +1,36 @@
+[2025-06-15 17:34:22,514] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: Job_dag.data_ingestion 2025-06-15T17:34:20.659968+00:00 [queued]>
+[2025-06-15 17:34:22,567] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: Job_dag.data_ingestion 2025-06-15T17:34:20.659968+00:00 [queued]>
+[2025-06-15 17:34:22,568] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2025-06-15 17:34:22,568] {taskinstance.py:1088} INFO - Starting attempt 1 of 2
+[2025-06-15 17:34:22,568] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2025-06-15 17:34:22,583] {taskinstance.py:1107} INFO - Executing <Task(PythonOperator): data_ingestion> on 2025-06-15T17:34:20.659968+00:00
+[2025-06-15 17:34:22,585] {standard_task_runner.py:52} INFO - Started process 113 to run task
+[2025-06-15 17:34:22,587] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'Job_dag', 'data_ingestion', '2025-06-15T17:34:20.659968+00:00', '--job-id', '62', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/churn_dag.py', '--cfg-path', '/tmp/tmpwgcgb7o9', '--error-file', '/tmp/tmpq0am8ty4']
+[2025-06-15 17:34:22,587] {standard_task_runner.py:77} INFO - Job 62: Subtask data_ingestion
+[2025-06-15 17:34:22,716] {logging_mixin.py:104} INFO - Running <TaskInstance: Job_dag.data_ingestion 2025-06-15T17:34:20.659968+00:00 [running]> on host d5b30d77de00
+[2025-06-15 17:34:22,927] {taskinstance.py:1302} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Job_dag
+AIRFLOW_CTX_TASK_ID=data_ingestion
+AIRFLOW_CTX_EXECUTION_DATE=2025-06-15T17:34:20.659968+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-06-15T17:34:20.659968+00:00
+[2025-06-15 17:34:22,940] {taskinstance.py:1501} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1157, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1331, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1361, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 150, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 161, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/Staging_upload.py", line 22, in ingestionFunc
+    with open('customer_churn_data.csv', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'customer_churn_data.csv'
+[2025-06-15 17:34:22,943] {taskinstance.py:1551} INFO - Marking task as UP_FOR_RETRY. dag_id=Job_dag, task_id=data_ingestion, execution_date=20250615T173420, start_date=20250615T173422, end_date=20250615T173422
+[2025-06-15 17:34:23,018] {local_task_job.py:151} INFO - Task exited with return code 1
