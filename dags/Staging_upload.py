@@ -1,8 +1,6 @@
 import psycopg2
 import csv
 
-
-
 def ingestionFunc(**kwargs):
     # Connect using psycopg2 directly
     conn = psycopg2.connect(
