@@ -16,8 +16,8 @@ load_dotenv()
 # Read the cron schedule from env
 #cron_schedule = os.getenv('CRON_SCHEDULE', '0 * * * *')  # fallback default
 
-cron_schedule = os.environ('CRON_SCHEDULE')
-
+#cron_schedule = os.environ('CRON_SCHEDULE')
+cron_schedule = os.getenv('CRON_SCHEDULE')
 
 default_args = {
     'owner': 'airflow',
