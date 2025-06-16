@@ -11,12 +11,12 @@ import os
 
 
 # Load environment variables from .env file
-load_dotenv(dotenv_path='/.env')  # Adjust path accordingly
-
+#load_dotenv(dotenv_path='/.env')  # Adjust path accordingly
+load_dotenv()
 # Read the cron schedule from env
-# cron_schedule = os.getenv('CRON_SCHEDULE', '0 * * * *')  # fallback default
+#cron_schedule = os.getenv('CRON_SCHEDULE', '0 * * * *')  # fallback default
 
-cron_schedule = os.getenv('CRON_SCHEDULE')
+cron_schedule = os.environ('CRON_SCHEDULE')
 
 
 default_args = {
