@@ -50,8 +50,10 @@ run_elt = PythonOperator(
 run_elt1 = PythonOperator(
     task_id = 'elt_transform',
     python_callable=transformFunc,
+   # op_kwargs={'rows_ingested': 0},
     dag=dag
 
 )
+
 
 run_elt >> run_elt1

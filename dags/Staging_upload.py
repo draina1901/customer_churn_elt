@@ -3,7 +3,7 @@ import csv
 
 
 
-def ingestionFunc():
+def ingestionFunc(**kwargs):
     # Connect using psycopg2 directly
     conn = psycopg2.connect(
         host="host.docker.internal",
@@ -22,6 +22,8 @@ def ingestionFunc():
     cursor.execute("DELETE FROM customers;")
     print("Old data deleted.")
 
+    rows_ingested = 0
+
     # Open your CSV
     with open('customer_churn_data.csv', 'r') as f:
         reader = csv.reader(f)
@@ -35,10 +37,13 @@ def ingestionFunc():
                     TechSupport, Churn
                 ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s);
             """, row)
+            rows_ingested +=1
 
     # Commit and close
     conn.commit()
     cursor.close()
     conn.close()
 
-    print("CSV data inserted into Postgres successfully.")
+    print(f"{rows_ingested} rows inserted into Postgres.")
+    kwargs['ti'].xcom_push(key='rows_ingested', value=rows_ingested)
+    return rows_ingested

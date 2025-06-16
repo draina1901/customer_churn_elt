@@ -104,6 +104,7 @@ docker compose up
 ##  Access the DAG
 
 * **Airflow UI**: [http://localhost:8080](http://localhost:8080)
+DAG Name : Job_dag
 
 ---
 
@@ -114,4 +115,6 @@ In a production setup, Metabase would be hosted on **AWS ECS or EC2** with prope
 
 ### Dashboard Screenshots
 
-*Add screenshots of your Metabase dashboards here.*
+![Dashboard Screenshot 1](images/Dashboard1.png)
+![Dashboard Screenshot 2](images/Dashboard2.png)
+
