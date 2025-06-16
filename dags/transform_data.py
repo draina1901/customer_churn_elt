@@ -24,14 +24,27 @@ def transformFunc(**kwargs):
     df = pd.read_sql("SELECT * FROM customers", stg_conn)
     stg_conn.close()
 
+  
+
+    df.replace(r'^\s*$', np.nan, regex=True, inplace=True)
     nulls_before = df.isnull().sum().sum()
 
     # Handle missing values
-    df['totalcharges'] = pd.to_numeric(df['totalcharges'], errors='coerce').fillna(0)
-    df['tenure'] = df['tenure'].fillna(0)
+    # df['totalcharges'] = pd.to_numeric(df['totalcharges'], errors='coerce').fillna(0)
+    # df['tenure'] = df['tenure'].fillna(0)
+    # df['gender'] = df['gender'].fillna('Unknown')
+    # df['contracttype'] = df['contracttype'].fillna('Unknown')
+    # df['techsupport'] = df['techsupport'].fillna('Unknown')
+    df['age'] = pd.to_numeric(df['age'], errors='coerce').fillna(0).astype(int)
+    df['tenure'] = pd.to_numeric(df['tenure'], errors='coerce').fillna(0).astype(int)
+    df['monthlycharges'] = pd.to_numeric(df['monthlycharges'], errors='coerce').fillna(0.0)
+    df['totalcharges'] = pd.to_numeric(df['totalcharges'], errors='coerce').fillna(0.0)
+
     df['gender'] = df['gender'].fillna('Unknown')
     df['contracttype'] = df['contracttype'].fillna('Unknown')
-    df['techsupport'] = df['techsupport'].fillna('Unknown')
+    df['internetservice'] = df['internetservice'].fillna('Unknown')
+    df['techsupport'] = df['techsupport'].fillna('No')
+    df['churn'] = df['churn'].fillna('No')
 
     nulls_after = df.isnull().sum().sum()
     nulls_filled = int(nulls_before - nulls_after)

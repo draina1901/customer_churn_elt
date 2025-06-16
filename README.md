@@ -58,23 +58,23 @@ CREATE DATABASE myuser;
 -- Switch to staging DB and create customers table
 \c cust_churn_stg;
 
-CREATE TABLE customers (
-    CustomerID INT PRIMARY KEY,
-    Age INT,
-    Gender VARCHAR(10),
-    Tenure INT,
-    MonthlyCharges DECIMAL(6, 2),
-    ContractType VARCHAR(20),
-    InternetService VARCHAR(20),
-    TotalCharges DECIMAL(10, 4),
-    TechSupport VARCHAR(3),
-    Churn VARCHAR(3)
+CREATE TABLE IF NOT EXISTS customers (
+    CustomerID TEXT,
+    Age TEXT,
+    Gender TEXT,
+    Tenure TEXT,
+    MonthlyCharges TEXT,
+    ContractType TEXT,
+    InternetService TEXT,
+    TotalCharges TEXT,
+    TechSupport TEXT,
+    Churn TEXT
 );
 
 -- Switch to staging DB and create customers table
 \c cust_churn_rep;
 
-CREATE TABLE customers (
+CREATE TABLE IF NOT EXISTS customers (
     CustomerID INT PRIMARY KEY,
     Age INT,
     Gender VARCHAR(10),
