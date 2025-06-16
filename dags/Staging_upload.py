@@ -13,18 +13,18 @@ def ingestionFunc(**kwargs):
         port=6543
     )
 
-    # Now you can use .cursor()
     print("Conection Testing123")
     print(conn)
     cursor = conn.cursor()
-    #cursor.execute("SELECT * FROM customers LIMIT 5;")
-    #print(cursor.fetchall())
+    #I am deleting and uploading whole data again because there wont be new data coming in.
+    # but in real project, we can do incremental load
     cursor.execute("DELETE FROM customers;")
     print("Old data deleted.")
 
     rows_ingested = 0
 
     # Open your CSV
+    # I have removed some fields from the columns to test the transformation logic from the csv manually
     with open('customer_churn_data.csv', 'r') as f:
         reader = csv.reader(f)
         next(reader)  # Skip header row

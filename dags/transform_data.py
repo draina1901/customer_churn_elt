@@ -30,11 +30,6 @@ def transformFunc(**kwargs):
     nulls_before = df.isnull().sum().sum()
 
     # Handle missing values
-    # df['totalcharges'] = pd.to_numeric(df['totalcharges'], errors='coerce').fillna(0)
-    # df['tenure'] = df['tenure'].fillna(0)
-    # df['gender'] = df['gender'].fillna('Unknown')
-    # df['contracttype'] = df['contracttype'].fillna('Unknown')
-    # df['techsupport'] = df['techsupport'].fillna('Unknown')
     df['age'] = pd.to_numeric(df['age'], errors='coerce').fillna(0).astype(int)
     df['tenure'] = pd.to_numeric(df['tenure'], errors='coerce').fillna(0).astype(int)
     df['monthlycharges'] = pd.to_numeric(df['monthlycharges'], errors='coerce').fillna(0.0)

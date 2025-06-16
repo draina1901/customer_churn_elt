@@ -57,7 +57,7 @@ CREATE DATABASE myuser;
 
 -- Switch to staging DB and create customers table
 \c cust_churn_stg;
-
+-- creating all text type column to be able to load missing columns(integer). Tranforming them to int again while tranformation
 CREATE TABLE IF NOT EXISTS customers (
     CustomerID TEXT,
     Age TEXT,
@@ -114,6 +114,11 @@ Due to container-bound Metabase dashboards, public hosting isn't supported in th
 In a production setup, Metabase would be hosted on **AWS ECS or EC2** with proper reverse proxying and authentication.
 
 ### Dashboard Screenshots
+Total Rows Ingested Per Hour will be 1000 because I am deleting and loading whole data.This will not the case in real project but for the sake of showing and updating the dashboard, I am doing that here.
+Nulls Filled and Total Rows added Number will also increase every time we run because we are running whole logic again on whole data. this is againn for the puprose of this project since there wont be new data added.
+
+
+
 
 ![Dashboard Screenshot 1](images/Dashboard1.png)
 ![Dashboard Screenshot 2](images/Dashboard2.png)
